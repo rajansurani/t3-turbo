@@ -41,7 +41,6 @@
   "devDependencies": {
     "@acme/api": "workspace:*",
     "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
     "@acme/tailwind-config": "workspace:*",
     "@acme/tsconfig": "workspace:*",
     "@babel/core": "^7.24.3",
@@ -63,6 +62,5 @@
     "ignorePatterns": [
       "expo-plugins/**"
     ]
-  },
-  "prettier": "@acme/prettier-config"
+  }
 }

@@ -95,13 +95,13 @@ function CreatePost() {
 }
 
 export default function Index() {
-  const utils = api.useUtils();
+  // const utils = api.useUtils();
 
-  const postQuery = api.post.all.useQuery();
+  // const postQuery = api.post.all.useQuery();
 
-  const deletePostMutation = api.post.delete.useMutation({
-    onSettled: () => utils.post.all.invalidate().then(),
-  });
+  // const deletePostMutation = api.post.delete.useMutation({
+  //   onSettled: () => utils.post.all.invalidate().then(),
+  // });
 
   return (
     <SafeAreaView className=" bg-background">
@@ -113,7 +113,7 @@ export default function Index() {
         </Text>
 
         <Pressable
-          onPress={() => void utils.post.all.invalidate()}
+          // onPress={() => void utils.post.all.invalidate()}
           className="flex items-center rounded-lg bg-primary p-2"
         >
           <Text className="text-foreground"> Refresh posts</Text>
@@ -125,7 +125,7 @@ export default function Index() {
           </Text>
         </View>
 
-        <FlashList
+        {/* <FlashList
           data={postQuery.data}
           estimatedItemSize={20}
           ItemSeparatorComponent={() => <View className="h-2" />}
@@ -135,7 +135,7 @@ export default function Index() {
               onDelete={() => deletePostMutation.mutate(p.item.id)}
             />
           )}
-        />
+        /> */}
 
         <CreatePost />
       </View>

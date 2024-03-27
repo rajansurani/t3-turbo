@@ -8,9 +8,6 @@ importers:
 
   .:
     devDependencies:
-      '@acme/prettier-config':
-        specifier: workspace:*
-        version: link:tooling/prettier
       '@turbo/gen':
         specifier: ^1.13.0
         version: 1.13.0(@types/node@20.11.30)(typescript@5.4.3)
@@ -136,9 +133,6 @@ importers:
       '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint
-      '@acme/prettier-config':
-        specifier: workspace:*
-        version: link:../../tooling/prettier
       '@acme/tailwind-config':
         specifier: workspace:*
         version: link:../../tooling/tailwind
@@ -227,9 +221,6 @@ importers:
       '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint
-      '@acme/prettier-config':
-        specifier: workspace:*
-        version: link:../../tooling/prettier
       '@acme/tailwind-config':
         specifier: workspace:*
         version: link:../../tooling/tailwind
@@ -509,9 +500,6 @@ importers:
         specifier: ^4.6.0
         version: 4.6.0(eslint@8.57.0)
     devDependencies:
-      '@acme/prettier-config':
-        specifier: workspace:*
-        version: link:../prettier
       '@acme/tsconfig':
         specifier: workspace:*
         version: link:../typescript

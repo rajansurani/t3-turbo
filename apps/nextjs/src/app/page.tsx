@@ -12,7 +12,7 @@ export const runtime = "edge";
 
 export default async function HomePage() {
   // You can await this here if you don't want to show Suspense fallback below
-  const posts = api.post.all();
+  // const posts = api.post.all();
 
   return (
     <main className="container h-screen py-16">
@@ -24,7 +24,7 @@ export default async function HomePage() {
 
         <CreatePostForm />
         <div className="w-full max-w-2xl overflow-y-scroll">
-          <Suspense
+          {/* <Suspense
             fallback={
               <div className="flex w-full flex-col gap-4">
                 <PostCardSkeleton />
@@ -34,7 +34,7 @@ export default async function HomePage() {
             }
           >
             <PostList posts={posts} />
-          </Suspense>
+          </Suspense> */}
         </div>
       </div>
     </main>
